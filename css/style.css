@@ -15,6 +15,7 @@ table{
 .cell {
     width: 40px;
     height: 40px;
+    background-color: #cacaca;
     border: 2px solid #ccc;
     text-align: center;
     /* vertical-align: middle; */
@@ -22,32 +23,27 @@ table{
     cursor: pointer;
     user-select: none;
     position: relative;
-    box-shadow: inset 4px 4px 1px #e5e5e5, inset -5px -5px 1px #888;
+    box-shadow: inset 5px 5px 1px #e3e3e3, inset -5px -5px 1px #888;
 }
 
-.cell :hover{
-    background-color: #d0d0d0
+.cell:hover{
+    background-color: #bebebe
 }
 
-.cell .open {
-    background-color: #b0b0b0;
-    box-shadow: inset 1px 1px 0 #888, inset -1px -1px 0 #fff;
+.open {
+    background-color: #c9c9c9;
+    box-shadow: inset 5px 5px 1px #888, inset -5px -5px 1px #efefef;
     border: 2px solid #999;
 }
 
-.cell .mine {
+.mine {
+    color: white;
     background-color: #f00;
-    color: #fff; 
 }
 
-.cell .flag {
+
+.cell.flag {
     background-color: #f0f0f0;
-    color: #d00;
-    font-size: 24px;
-}
-
-.floor {
-    background-color: #cacaca;
 }
 
 button{
