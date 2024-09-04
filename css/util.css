@@ -1,0 +1,47 @@
+
+/* .cell img {
+    width: 25px;
+    height: auto;
+} */
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+/* CSS */
+
+/*
+td {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #e0e0e0;         
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;         
+    position: relative;         
+    box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #888;
+}
+
+td:hover {
+    background-color: #d0d0d0;         
+}
+
+td.open {
+    background-color: #b0b0b0;           
+    box-shadow: inset 1px 1px 0 #888, inset -1px -1px 0 #fff;
+    border: 2px solid #999;          
+}
+
+
+td.mine {
+    background-color: #f00;         
+    color: #fff;         
+}
+
+
+td.flag {
+    background-color: #f0f0f0;
+    color: #d00;
+    font-size: 24px;
+}

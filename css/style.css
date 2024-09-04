@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(255, 228, 218);
+    color: rgba(98, 41, 0, 0.46);
+    text-align: center;
+    font-family: 'Lato';
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+}
+
+table{
+    margin: auto;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    text-align: center;
+    /* vertical-align: middle; */
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    box-shadow: inset 4px 4px 1px #e5e5e5, inset -5px -5px 1px #888;
+}
+
+.cell :hover{
+    background-color: #d0d0d0
+}
+
+.cell .open {
+    background-color: #b0b0b0;
+    box-shadow: inset 1px 1px 0 #888, inset -1px -1px 0 #fff;
+    border: 2px solid #999;
+}
+
+.cell .mine {
+    background-color: #f00;
+    color: #fff; 
+}
+
+.cell .flag {
+    background-color: #f0f0f0;
+    color: #d00;
+    font-size: 24px;
+}
+
+.floor {
+    background-color: #cacaca;
+}
+
+button{
+    margin: 20px;
+    font-family: 'Lato';
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgba(98, 41, 0, 0.557);
+    background-color: #ffd5c49a;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(98, 41, 0, 0.557);
+    color:#ffd5c4;
+}
+
+.hide {
+    display: none;
+}
