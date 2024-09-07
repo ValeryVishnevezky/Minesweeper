@@ -12,18 +12,25 @@
   </head>
 
   <body onload="onInit()">
+    <button class="dark-mode-button" onclick="darkMode()">🌙</button>
     <h1>Minesweeper</h1>
     <div class="game">
       <div class="top">
-        <p class="start">
-          <span class="marked-count">0</span>
-          <button class="button" onclick="onInit()">😊</button>
-          <span class="timer">0</span>
+        <span class="marked-count">0</span>
+        <button class="button" onclick="onInit()">😊</button>
+        <span class="timer">0</span>
+        <p class="Lives">
+          <span class="Mines">Mines: </span><span class="mines count">0</span> <span class="Live">❤️❤️❤️</span>
         </p>
       </div>
       <table>
         <tbody class="board"></tbody>
       </table>
+      <button class="button-medium" onclick="levelChoice('easy')">Easy</button>
+      <button class="button-medium" onclick="levelChoice('medium')">
+        Medium
+      </button>
+      <button class="button-hard" onclick="levelChoice('hard')">Hard</button>
     </div>
     <script src="js/util.js"></script>
     <script src="js/game.js"></script>

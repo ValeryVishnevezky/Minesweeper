@@ -7,10 +7,33 @@ body {
   padding: 30px;
 }
 
+.dark-mode-button {
+  font-size: 2.5em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  padding-bottom: 7px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+}
+
+.dark-mode-button:hover {
+  background: #c4c4c4;
+  box-shadow: none;
+}
+
+.dark-mode {
+  background-color: rgb(29, 29, 29);
+  color: #e2e2e2;
+}
+
 .game {
+  margin: auto;
   color: #383838;
   background-color: #bfbfbf;
-  padding: 20px;
+  padding: 30px;
   display: inline-block;
   box-shadow: inset 8px 8px 1.5px #e0e0e0, inset -8px -8px 1.5px #868686;
 }
@@ -24,16 +47,18 @@ h1 {
 .top {
   align-items: center;
   margin: 10px;
+  margin-bottom: 20px;
   box-shadow: inset 4px 4px 1px #868686, inset -4px -4px 1px #e0e0e0;
 }
 
 .marked-count {
   font-size: 2em;
   font-weight: bold;
-  padding: 40px;
+  margin: 40px;
 }
 
-button {
+.button {
+  font-size: 1.8em;
   margin: 20px;
   background-color: #bfbfbf;
   border: none;
@@ -45,12 +70,8 @@ button {
   box-shadow: inset 5px 5px 1px #e0e0e0, inset -5px -5px 1px #868686;
 }
 
-.button {
-  font-size: 1.8em;
-}
-
 button:hover {
-  background: #545454;
+  background: #868686;
   box-shadow: none;
 }
 
@@ -58,26 +79,41 @@ button:hover {
   font-size: 2em;
   font-weight: bold;
   text-align: center;
-  padding: 40px;
+  margin: 40px;
   box-sizing: border-box;
 }
 
+.Lives {
+  font-size: 1.8em;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.Live{
+  margin-left: 60px;
+}
+
+
 table {
-  background-color: #bfbfbf;
   margin: auto;
+  background-color: #bfbfbf;
   border-collapse: collapse;
   box-shadow: inset 8px 8px 1.5px #e0e0e0, inset -8px -8px 1.5px #868686;
 }
 
 .cell {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #bfbfbf;
   text-align: center;
   font-size: 20px;
   cursor: pointer;
   box-sizing: border-box;
   box-shadow: inset 4.5px 4.5px 1px #e0e0e0, inset -4.5px -4.5px 1px #868686;
+}
+
+.cell:hover {
+  background-color: #dcdcdcd9;
 }
 
 .open {
@@ -94,6 +130,44 @@ table {
   background-color: #f0f0f0;
 }
 
+.hints {
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.button-hint {
+  font-size: 2.5em;
+  border: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+.button-hint:hover {
+  background: #ffebd2;
+  box-shadow: none;
+}
+
+.button-easy,
+.button-medium,
+.button-hard {
+  font-size: 1.5em;
+  margin: 15px;
+  background-color: #bfbfbf;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  width: 115px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: inset 5px 5px 1px #e0e0e0, inset -5px -5px 1px #868686;
+}
+
 .hide {
   display: none;
+}
+
+.name {
+  font-size: 1.5em;
 }
