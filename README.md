@@ -1,2 +1,2 @@
 # Minesweeper
-# https://valeryvishnevezky.github.io/Minesweeper/
+ https://valeryvishnevezky.github.io/Minesweeper/
